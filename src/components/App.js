@@ -7,7 +7,7 @@ const App = () => {
   const [fruits, setFruits] = useState(allfruits)
   const [search, setSearch] = useState('')
   const handleSearch=(e)=>{
-    setFruits(fruits.filter(el=>el.toLowerCase().includes(e.target.value.toLowerCase())))
+    setFruits(allfruits.filter(el=>el.toLowerCase().includes(e.target.value.toLowerCase())))
     setSearch(e.target.value)
   }
   return (
